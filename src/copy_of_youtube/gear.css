@@ -1,0 +1,27 @@
+.gear-image {
+    height: 40vmin;
+    
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .gear-image {
+      animation: gear-spin infinite 30s linear;
+    }
+  }
+  
+  .Move-gear {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes gear-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
